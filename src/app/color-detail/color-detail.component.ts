@@ -10,8 +10,8 @@ import { of, Subscription } from 'rxjs'
 })
 export class ColorDetailComponent implements OnInit, OnDestroy {
   public subscriptions: Subscription[] = [];
+  name;
   color;
-  ret;
   constructor(private cs: ColorsInfoService, private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -20,15 +20,15 @@ export class ColorDetailComponent implements OnInit, OnDestroy {
        of(params.get('name'))
       )
     ).subscribe(d => {
-      this.color = d;
-      this.ret = this.cs.colorsArray.find(e => e.name === this.color);
-      if (this.ret === undefined) {
-        this.ret = '';
+      this.name = d;
+      this.color = this.cs.colorsArray.find(e => e.name === this.name);
+      if (this.color === undefined) {
         this.color = '';
+        this.name = '';
       }
     }));
-  console.log(typeof this.color);
-  console.log(this.color);
+  console.log(typeof this.name);
+  console.log(this.name);
   }
 
   ngOnDestroy() {

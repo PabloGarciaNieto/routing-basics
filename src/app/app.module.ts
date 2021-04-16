@@ -8,6 +8,7 @@ import { ColorsComponent } from './colors/colors.component';
 import { ColorDetailComponent } from './color-detail/color-detail.component';
 import { ColorsInfoService } from './colors-info.service';
 import { ErrorComponent } from './error/error.component';
+import { SecretComponent } from './secret/secret.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ErrorComponent } from './error/error.component';
     ColorsComponent,
     ColorDetailComponent,
     ErrorComponent,
+    SecretComponent,
 
   ],
   imports: [

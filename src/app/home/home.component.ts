@@ -17,5 +17,8 @@ export class HomeComponent implements OnInit {
       this.router.navigate(['colors']);
     }
   }
+  guardProtection() {
+    this.router.navigate(['admin']);
+  }
 
 }
