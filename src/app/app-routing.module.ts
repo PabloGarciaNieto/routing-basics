@@ -1,3 +1,4 @@
+import { PreloadGuard } from './preload.guard';
 import { AdminGuard } from './admin.guard';
 import { SecretComponent } from './secret/secret.component';
 import { ErrorComponent } from './error/error.component';
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: 'colors', component: ColorsComponent,
-    children: [{ path: ':name', component: ColorDetailComponent },]
+    children: [{ path: ':name', component: ColorDetailComponent, resolve: [PreloadGuard]},]
   },
   { path: ':admin', component: SecretComponent, canActivate: [AdminGuard] },
   { path: '**', component: ErrorComponent },

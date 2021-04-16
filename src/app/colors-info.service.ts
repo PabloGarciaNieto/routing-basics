@@ -5,10 +5,10 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class ColorsInfoService {
   colorsArray = [
-    { name: 'Red', color: '#ff0000' },
-    { name: 'Orange', color: '#ffa500'  },
-    { name: 'Yellow', color: '#ffff00'  },
-    { name: 'Pink', color: '#ffc0cb'  }
+    { name: 'Red', code: '#ff0000' },
+    { name: 'Orange', code: '#ffa500'  },
+    { name: 'Yellow', code: '#ffff00'  },
+    { name: 'Pink', code: '#ffc0cb'  }
   ];
 /*   public colorsArray = new BehaviorSubject<any[]>(
     [
