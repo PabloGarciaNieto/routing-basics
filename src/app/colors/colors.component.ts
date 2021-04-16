@@ -12,6 +12,7 @@ export class ColorsComponent implements OnInit {
 
   ngOnInit() {
     this.colors = this.cs.colorsArray;
+    console.log(this.colors);
     //this.cs.colors.subscribe(data => {this.colors = data});
 
   }
