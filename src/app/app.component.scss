@@ -1,0 +1,9 @@
+.cont {
+    width: calc(100% - 40px);
+    padding: 20px;
+    background-color: rgb(249, 199, 75);
+    .title {
+        cursor: pointer;
+        color: #fff;
+    }
+}

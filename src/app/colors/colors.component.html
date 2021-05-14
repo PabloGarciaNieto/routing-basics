@@ -1,7 +1,11 @@
-<h2>Colors component</h2>
-<ul>
-    <li *ngFor="let color of colors">
-        <a routerLinkActive="active" [routerLink]="['/colors', color.name]">{{ color.name }}</a>
-    </li>
-</ul>
-<router-outlet></router-outlet>
+<div class="cont">
+    <div class="menu">
+        <h2>Colors component</h2>
+        <ul>
+            <li *ngFor="let color of colors">
+                <a class="links" routerLinkActive="active" [routerLink]="['/colors', color.name]">{{ color.name }}</a>
+            </li>
+        </ul>
+    </div>
+    <router-outlet></router-outlet>
+</div>

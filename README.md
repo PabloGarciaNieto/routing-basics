@@ -1,5 +1,5 @@
 # RoutingBasics
-
+Here you can see how manage the routing module and how to use guards to make preloads, or to protect sensible routes
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
 ## Development server

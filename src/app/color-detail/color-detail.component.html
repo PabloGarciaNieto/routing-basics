@@ -1,5 +1,7 @@
-<div>
+<div *ngIf="nameInTheRoute">
     <h2>Color detail Component</h2>
-    <p>{{ color.name }}</p>
-    <p [ngStyle]="{'color':color.code}"> {{ color.code }}</p>
+    <div class="cont">
+        <p [ngStyle]="{'color':color.code}">{{ color.name }}</p>
+        <div class="color-box" [ngStyle]="{'background-color':color.code}"> {{ color.code }}</div>
+    </div>
 </div>

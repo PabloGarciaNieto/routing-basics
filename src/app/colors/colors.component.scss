@@ -1,6 +1,18 @@
-.active {
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #000;
+.cont {
+    width: calc(100% - 40px);
+    padding: 20px;
+    display: flex;
+    .menu {
+        margin-right: 50px;
+        .links {
+            color: rgb(111, 111, 111);
+            cursor: pointer;
+        }
+        .active {
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #000;
+        }
+    }
 }

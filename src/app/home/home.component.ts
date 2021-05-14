@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
   clickHandle() {
-    const confirm = prompt('Are you sure to go there?');
+    const confirm = prompt('Enter yes, if you want to go there');
     if (confirm === 'yes') {
       this.router.navigate(['colors']);
     }
